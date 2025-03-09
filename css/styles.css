@@ -1,0 +1,341 @@
+@font-face {
+    font-family: 'Futura Md BT';
+    src: url('fonts/FuturaMdBT.ttf') format('truetype'); /* Carrega a fonte */
+  }  
+   
+   
+   :root {
+        --primary-color: #1B120D; /* Azul profissional */
+        --secondary-color: #FF6B35; /* Laranja energético */
+        --text-color: #333333;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+    }
+
+    h1, h2, h3 {
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        
+    }
+
+    /* === SEÇÃO HERO === */
+    .hero::before {
+        content: ''; /* Necessário para o pseudo-elemento funcionar */
+        background: var(--primary-color) url('../imagens/dinheiro.png'); /* Imagem de fundo */
+        background-size: cover; /* Cobrir a área sem distorcer */
+        background-position: center; /* Centralizar a imagem */
+        position: absolute; /* Posiciona o pseudo-elemento sobre o container */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        opacity: 0.2; /* 20% de opacidade (só na imagem) */
+        z-index: 1; /* Coloca o pseudo-elemento atrás do conteúdo */
+      }
+      
+      
+      .topo {
+        background: var(--primary-color);
+        background-size: cover; /* Cobrir a área sem distorcer */
+        background-position: top; /* Alinhar a imagem no topo */
+        height: 700px; /* Altura do container */
+        display: flex;
+        flex-direction: column; /* Alinha os itens verticalmente */
+        align-items: center; /* Centraliza horizontalmente */
+
+        position: relative; /* Para posicionar elementos internos */
+      }
+      
+      .topo h1 {
+        color: white; /* Cor do texto */
+        text-align: center; /* Alinhamento do texto */
+        font-size: 28px; /* Tamanho da fonte */
+        margin-top: 20px; /* Espaço no topo do texto */
+        line-height: 1.2; /* Melhora o espaçamento entre as linhas */
+        z-index: 10; /* Coloque um valor maior que o z-index das imagens */
+      }
+      
+      .topo h1 span {
+        color: #00FF00; /* Cor verde para partes específicas do título */
+      }
+      
+      .social  {
+        z-index: 10; /* Coloque um valor maior que o z-index das imagens */
+        font-size: 20px; /* Tamanho da fonte */
+        margin-top: 0px; /* Espaçamento acima do texto */
+        color: white; /* Cor do texto */
+        line-height: 1.5; /* Melhora o espaçamento entre as linhas */
+        text-align: left; /* Alinha o texto à esquerda */
+        width: 100%; /* Ocupa toda a largura do contêiner pai */
+        padding-left: 250px; /* Adiciona um espaçamento à esquerda */
+      }
+      
+      .social h2 {
+        font-size: 13px; /* Tamanho da fonte do subtítulo */
+        margin-bottom: 30px; /* Espaçamento abaixo do subtítulo */
+        text-align: left; /* Alinha o subtítulo à esquerda */
+      }
+      
+      .social h2 span {
+        color: #00FF00; /* Cor verde para o nome "Robert McKee" */
+      }
+      
+      .vetor {
+        width: 350px; /* Largura do contêiner (ajuste conforme necessário) */
+        z-index: 10; /* Coloque um valor maior que o z-index das imagens */
+   
+      }
+      
+      .vetor img {
+        
+        max-width: 100%; /* Limita a largura da imagem ao tamanho do contêiner */
+        height: auto; /* Mantém a proporção */
+        margin-top: 0px; /* Espaçamento acima da imagem */
+        margin-left: 0px; /* Alinha a imagem à esquerda */
+      }
+      
+      .disney {
+        font-size: 20px; /* Tamanho da fonte */
+        margin-top: 20px; /* Espaçamento acima do texto */
+        color: white; /* Cor do texto */
+        line-height: 1.5; /* Melhora o espaçamento entre as linhas */
+        text-align: right; /* Alinha o texto à esquerda */
+        width: 100%; /* Ocupa toda a largura do contêiner pai */
+        padding-left: 250px; /* Adiciona um espaçamento à esquerda */ 
+      }
+
+      .disney h2 {
+        font-size: 13px; /* Tamanho da fonte do subtítulo */
+        margin-bottom: 10px; /* Espaçamento abaixo do subtítulo */
+        text-align: right; /* Alinha o subtítulo à esquerda */
+        padding-right: 250px;
+      }
+
+      /* Estilo para a imagem do McKee */
+.mckee img {
+  width: 37%; /* Largura da imagem */
+  height:auto; /* Mantém a proporção */
+  position: absolute; /* Mantém a imagem no fluxo normal */
+  z-index: 1; /* Coloca a imagem na frente */
+  bottom: 0; /* Cola a imagem na parte inferior da seção */
+  left: 0; /* Alinha à esquerda */
+}
+
+/* Estilo para a imagem verde */
+.verdefinal img {
+  width:100%; /* Largura da imagem */
+  height: 25%; /* Mantém a proporção */
+  position: absolute; /* Posiciona a imagem absolutamente dentro da seção */
+  bottom: 0; /* Cola a imagem na parte inferior da seção */
+  left: 0; /* Alinha à esquerda */
+  z-index: 0; /* Coloca a imagem atrás */
+}
+
+.cta-button {
+
+  z-index: 10; /* Coloque um valor maior que o z-index das imagens */
+  display: inline-block;
+  padding: 15px 30px; /* Espaçamento interno */
+  font-size: 18px; /* Tamanho da fonte */
+  font-weight: bold; /* Texto em negrito */
+  color: black; /* Cor do texto */
+  text-align: center;
+  text-decoration: none; /* Remove sublinhado do link */
+  background: linear-gradient(45deg, #00ff1a, #03ff63); /* Gradiente azul/roxo */
+  border: 10px;
+  border-radius: 3px; /* Bordas arredondadas */
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.385); /* Sombra suave */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Transição suave para o hover */
+  align-items:end;
+  position: relative;
+}
+
+/* Efeito ao passar o mouse */
+.cta-button:hover {
+  background: linear-gradient(45deg, #00ff55, #00ff15); /* Inverte o gradiente */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Aumenta a sombra */
+  transform: translateY(-3px); /* Levanta o botão */
+}
+
+/* Efeito ao clicar */
+.cta-button:active {
+  transform: translateY(0); /* Volta à posição original */
+  box-shadow: 0 4px 15px rgb(255, 255, 255); /* Sombra normal */
+}
+
+
+      @media (max-width: 768px) {
+        .social {
+          padding-left: 10px; /* Espaçamento menor em dispositivos móveis */
+        }
+        .disney h2 {
+            padding-right: 20px; /* Espaçamento menor em dispositivos móveis */
+            text-align: right; 
+
+          }
+        .vetor img {
+          margin-left: 10px; /* Espaçamento menor em dispositivos móveis */
+        }
+        .mckee img {
+          width: 60%; /* Largura da imagem */
+          height: auto; /* Mantém a proporção */
+          position: absolute; /* Mantém a imagem no fluxo normal */
+          z-index: 1; /* Coloca a imagem na frente */
+          bottom: 0; /* Cola a imagem na parte inferior da seção */
+          left: 0; /* Alinha à esquerda */
+        }
+      }
+
+    /* === SEÇÃO BENEFÍCIOS === */
+    
+    .benefits {
+        padding: 4rem 0;
+        background: #f8f9fa;
+    }
+    
+    .benefits h2 {
+      text-align: center;
+    font-size: 30px;
+    margin-bottom: 2rem;
+    color: #333; /* Cor do título */
+    }
+
+    .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .benefit-card {
+        text-align: center;
+        padding: 2rem;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    }
+
+    .benefit-icon {
+      font-size: 2rem; /* Tamanho dos ícones */
+      color: #e30000; /* Cor dos ícones */
+      margin-bottom: 1rem; /* Espaçamento abaixo dos ícones */
+      display: flex; /* Alinha os ícones lado a lado */
+      justify-content: center; /* Centraliza os ícones horizontalmente */
+      gap: 0.5rem; /* Espaçamento entre os ícones */
+    }
+
+    .fas.benefit-icon {
+      font-size: 3rem; /* Ajuste o valor conforme necessário */
+      color: #2a651b; /* Cor do ícone */
+      margin-bottom: 1rem; /* Espaçamento abaixo do ícone */
+  }
+
+    /* === SEÇÃO AUTOR === */
+    .author-section {
+        background-color: #1B120D;
+        color: white;
+        padding: 4rem 0;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 3rem;
+        align-items: center;
+    }
+    .author-section img{ 
+      margin-left: 10px;
+      
+  }
+
+  .author-section .container{
+    background-color: #1B120D;
+    
+}
+
+    .author-photo {
+        width: 100%;
+        max-width: 350px;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+
+    /* === DEPOIMENTOS === */
+    .testimonials {
+        padding: 4rem 0;
+
+        color: white;
+    }
+
+    .testimonials .container {
+      background-color: #f8f9fa;
+      margin-bottom: 0px;
+    }
+
+    .testimonials .container h2{
+      color: black;
+    }
+
+    .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+
+    }
+
+    .testimonial-card {
+      color: black;
+        background: rgba(0, 254, 63, 0.199);
+        padding: 2rem;
+        border-radius: 10px;
+    }
+
+    .testimonial-photo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+    }
+
+    /* === SEÇÃO OFERTA === */
+    .offer-section {
+        padding: 4rem 0;
+        text-align: center;
+    }
+
+    .price {
+        font-size: 2.5rem;
+        color: var(--secondary-color);
+        margin: 1rem 0;
+    }
+
+    .guarantee-badge {
+        display: inline-block;
+        background: #4CAF50;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        margin: 1rem 0;
+    }
+
+    /* === FOOTER === */
+    footer {
+        background: var(--primary-color);
+        color: white;
+        padding: 2rem 0;
+        text-align: center;
+}

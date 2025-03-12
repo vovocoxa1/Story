@@ -128,6 +128,249 @@
       }
 
       /* Estilo para a imagem do McKee */
+      /* Estilos Gerais */
+.desire {
+  padding: 4rem 0;
+  background-color: #1B120D; /* Fundo escuro predominante */
+  color: #fff; /* Texto branco */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.desire-content {
+  text-align: center;
+}
+
+/* Estilos Gerais */
+.desire {
+  padding: 4rem 0;
+  background-color: #1B120D; /* Fundo escuro predominante */
+  color: #fff; /* Texto branco */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.desire-content {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #fff; /* Título branco */
+}
+
+.desire-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #ecf0f1; /* Cinza claro para o subtítulo */
+}
+
+.desire-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.desire-item {
+  background: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.desire-item i {
+  color: #f1c40f; /* Cor do ícone (amarelo) */
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.desire-item p {
+  font-size: 1rem;
+  color: #ecf0f1; /* Texto cinza claro */
+}
+
+.urgency {
+  margin-top: 2rem;
+  background: rgba(0, 0, 0, 0.3); /* Fundo escuro semi-transparente */
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.urgency-text {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #fff; /* Texto branco */
+}
+
+.bonus-list {
+  list-style: none; /* Remove os marcadores padrão da lista */
+  padding: 0; /* Remove o padding padrão */
+  margin-bottom: 1.5rem; /* Espaçamento abaixo da lista */
+}
+
+.bonus-list li {
+  font-size: 1rem; /* Tamanho do texto */
+  margin-bottom: 0.5rem; /* Espaçamento entre os itens da lista */
+  color: #ecf0f1; /* Cor do texto (cinza claro) */
+  display: flex; /* Ativa o flexbox */
+  align-items: center; /* Centraliza verticalmente o ícone e o texto */
+}
+
+.bonus-list i {
+  color: #f1c40f; /* Cor do ícone (amarelo) */
+  margin-right: 0.5rem; /* Espaçamento entre o ícone e o texto */
+  font-size: 1.2rem; /* Tamanho do ícone */
+}
+
+.urgency-warning {
+  font-size: 1rem;
+  color: #e74c3c; /* Cor de alerta (vermelho) */
+}
+
+.countdown {
+  font-weight: bold;
+}
+
+.cta {
+  margin-top: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #e67e22; /* Cor do botão (laranja) */
+  color: #000 !important;
+  font-size: 1.25rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #d35400; /* Cor do botão ao passar o mouse */
+  color: #000; /* Mantém o texto preto no hover */
+}
+
+@media (max-width: 768px) {
+  h2 {
+      font-size: 2rem;
+  }
+
+  .desire-subtitle {
+      font-size: 1rem;
+  }
+
+  .urgency-text {
+      font-size: 1rem;
+  }
+
+  .cta-button {
+      font-size: 1rem;
+      padding: 0.75rem 1.5rem;
+  }
+}
+
+/* Estilos Gerais */
+.illustrative {
+  padding: 4rem 0;
+  background-color: #ffffff; /* Fundo branco */
+  color: #333; /* Texto escuro */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.illustrative .container h2{
+  color: #000;
+  text-align: center;
+}
+
+
+.illustrative-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.illustrative-block {
+  background: #f9f9f9; /* Fundo cinza claro */
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e0e0e0; /* Borda sutil */
+}
+
+.illustrative-block:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.illustrative-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.illustrative-text {
+  padding: 1.5rem;
+}
+
+
+
+.illustrative-text p {
+  font-size: 1rem;
+  color: #555; /* Texto cinza escuro */
+}
+
+@media (max-width: 768px) {
+  h2 {
+      font-size: 2rem;
+  }
+
+  .illustrative-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .illustrative-text h3 {
+      font-size: 1.25rem;
+  }
+
+  .illustrative-text p {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+      font-size: 2rem;
+  }
+
+  .illustrative-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .illustrative-text h3 {
+      font-size: 1.25rem;
+  }
+
+  .illustrative-text p {
+      font-size: 0.9rem;
+  }
+}
+
 .mckee img {
   width: 37%; /* Largura da imagem */
   height:auto; /* Mantém a proporção */
@@ -256,6 +499,7 @@
         grid-template-columns: 1fr 2fr;
         gap: 3rem;
         align-items: center;
+        
     }
     .author-section img{ 
       margin-left: 10px;
@@ -276,40 +520,52 @@
 
     /* === DEPOIMENTOS === */
     .testimonials {
-        padding: 4rem 0;
-
-        color: white;
-    }
-
-    .testimonials .container {
+      padding: 4rem 0;
+      display: flex;
+      color: rgb(0, 0, 0);
+  }
+  
+  .testimonials .container {
       background-color: #f8f9fa;
       margin-bottom: 0px;
-    }
-
-    .testimonials .container h2{
-      color: black;
-    }
-
-    .testimonial-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-
-    }
-
-    .testimonial-card {
-      color: black;
-        background: rgba(0, 254, 63, 0.199);
-        padding: 2rem;
-        border-radius: 10px;
-    }
-
-    .testimonial-photo {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        margin-bottom: 1rem;
-    }
+  }
+  
+  .testimonials .container h2 {
+      color: rgb(0, 0, 0);
+  }
+  
+  .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+  }
+  
+  .testimonial-card {
+      color: rgb(255, 255, 255);
+      background: #1B120D;
+      padding: 2rem;
+      border-radius: 10px;
+  }
+  
+  .testimonial-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+  }
+  
+  .testimonial-photo {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-bottom: 0; /* Removido para o espaçamento ser controlado pelo .testimonial-header */
+  }
+  
+  .testimonial-name {
+      margin: 0;
+      font-size: 1.2em;
+      color: #ffffff;
+  }
 
     /* === SEÇÃO OFERTA === */
     .offer-section {
@@ -331,6 +587,112 @@
         border-radius: 20px;
         margin: 1rem 0;
     }
+    /* Estilos Gerais */
+.offer {
+  padding: 4rem 0;
+  background-color: #2c3e50; /* Cor de fundo escura para destaque */
+  color: #fff; /* Texto branco */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.offer-content {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.offer-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #ecf0f1; /* Cinza claro para o subtítulo */
+}
+
+.offer-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  background: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.highlight i {
+  color: #1abc9c; /* Cor do ícone */
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.highlight p {
+  font-size: 1rem;
+  color: #ecf0f1;
+}
+
+.offer-cta {
+  margin-top: 2rem;
+}
+
+.offer-price {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-weight: bold;
+  color: #1abc9c; /* Cor destacada para o preço */
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #1abc9c; /* Cor do botão */
+  color: #fff;
+  font-size: 1.25rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #16a085; /* Cor do botão ao passar o mouse */
+}
+
+.offer-guarantee {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  color: #bdc3c7; /* Cinza claro para o texto de garantia */
+}
+
+@media (max-width: 768px) {
+  h2 {
+      font-size: 2rem;
+  }
+
+  .offer-subtitle {
+      font-size: 1rem;
+  }
+
+  .offer-price {
+      font-size: 1.25rem;
+  }
+
+  .cta-button {
+      font-size: 1rem;
+      padding: 0.75rem 1.5rem;
+  }
+}
 
     /* === FOOTER === */
     footer {
